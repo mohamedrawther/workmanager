@@ -1,0 +1,6 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/dist/css/bootstrap.css";
+
+/* import this if uisng Angular 5+ bootstrap date & time picker <dl-date-time-picker></dl-date-time-picker> */
+/*@import '~open-iconic/font/css/open-iconic-bootstrap.css';*/

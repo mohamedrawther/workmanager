@@ -1,0 +1,86 @@
+[
+  {
+    "id": "1",
+    "code": "100",
+    "name": "AIA",    
+    "desc": "AIA - Insurance",
+    "type": "STREAM"
+  },
+  {
+    "id": "2",
+    "code": "101",
+    "name": "EMMA",    
+    "desc": "EMMA - Insurance",
+    "type": "STREAM"
+  },
+  {
+    "id": "3",
+    "code": "103",
+    "name": "BI",    
+    "desc": "BI - Integration",
+    "type": "STREAM"
+  },
+  {
+    "id": "4",
+    "code": "104",
+    "name": "CCM",    
+    "desc": "Customer communication management",
+    "type": "STREAM"
+  },
+  {
+    "id": "5",
+    "code": "105",
+    "name": "EXTRANET-JAVA",    
+    "desc": "Extranet java apps",
+    "type": "STREAM"
+  },
+  {
+    "id": "6",
+    "code": "106",
+    "name": "EXTRANET-SFDC",    
+    "desc": "Extranet SFDC Apps",
+    "type": "STREAM"
+  },
+  {
+    "id": "1",
+    "code": "101",
+    "name": "INC",    
+    "desc": "incidents",
+    "type": "PROJECTTYPE"
+  },
+  {
+    "id": "2",
+    "code": "102",
+    "name": "PROBLEM",    
+    "desc": "Problems",
+    "type": "PROJECTTYPE"
+  },
+  {
+    "id": "3",
+    "code": "103",
+    "name": "PROJECT",    
+    "desc": "Project task",
+    "type": "PROJECTTYPE"
+  }
+  ,{
+    "id": "1",
+    "code": "101",
+    "name": "HOURS",    
+    "desc": "hours",
+    "type": "ESTIMATIONTYPE"
+  },
+  {
+    "id": "2",
+    "code": "102",
+    "name": "DAYS",    
+    "desc": "days",
+    "type": "ESTIMATIONTYPE"
+  },
+  {
+    "id": "3",
+    "code": "103",
+    "name": "POINTS",    
+    "desc": "story points",
+    "type": "ESTIMATIONTYPE"
+  }
+]

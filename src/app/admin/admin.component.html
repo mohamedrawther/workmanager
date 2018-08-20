@@ -1,0 +1,50 @@
+<div class="row">
+    <div class="col-sm-2"></div>  
+    <div class="col-sm-8">
+      <div class="card align-middle">
+        <h2 class="card-header text-center">Project Creation</h2>
+        <div class="card-body form-group">          
+            <form #adminForm="ngForm">
+              <div class="row">
+                <div class="col-sm-6">                  
+                  <select [(ngModel)]="stream" name="stream" class="mb-3 custom-select form-control input-group-text" id="inputGroupSelect02" required>
+                    <option [selected]="true">--select stream--</option>   
+                    <option *ngFor="let streamType of streamList" [ngValue]="streamType">{{streamType.name}}</option>                     
+                  </select> 
+                  <div class="input-group mb-3">
+                    <input type="text" id="code" [(ngModel)]="code" name="code" class="form-control" placeholder="ID" required (onblur)="checkDuplication()">
+                    <div class="input-group-append">                      
+                      <select [(ngModel)]="type" name="type" class="custom-select form-control input-group-text" id="inputGroupSelect02" required>
+                        <option [selected]="true">--select type--</option>
+                        <option *ngFor="let projType of projectTypeList" [ngValue]="projType">{{projType.name}}</option>                     
+                      </select>                        
+                    </div>
+                  </div>
+                </div> 
+                <div class="col-sm-6">                  
+                  <div class="input-group mb-3">
+                    <input type="text" id="estimation" [(ngModel)]="estimation" name="estimation" class="form-control" placeholder="estimation" required>
+                    <div class="input-group-append">                      
+                      <select [(ngModel)]="estimationType" name="estimationType" class="custom-select form-control input-group-text" id="inputGroupSelect02" required>
+                        <option [selected]="true">--select type--</option>                           
+                        <option *ngFor="let estType of estimationTypeList" [ngValue]="estType">{{estType.name}}</option>                                             
+                      </select>
+                    </div>   
+                  </div>                           
+                  <input type="text" id="startdate" [(ngModel)]="startdate" ngbDatepicker #dstart="ngbDatepicker" (click)="dstart.toggle()" name="startdate" class="form-control mb-3" placeholder="startdate" required>
+                  <input type="text" id="enddate" [(ngModel)]="enddate" name="enddate" ngbDatepicker #dend="ngbDatepicker" (click)="dend.toggle()" class="form-control mb-3" placeholder="enddate" required> 
+                  
+                </div>
+              </div>
+              <div>
+                <div class="row"><div class="col-sm-4"></div><div class="col-sm-4">
+                  <input class="btn btn-primary mb-2" type="button" value="Create" (click)="create()" [disabled]="!adminForm.form.valid">            
+                  <input class="btn btn-primary mb-2" type="reset" value="Reset" (click)="adminForm.reset();">
+                  <input class="btn btn-primary mb-2" type="button" value="Cancel" (click)="cancel()">
+                </div><div class="col-sm-4"></div></div>
+              </div>                
+            </form>
+        </div>  
+      </div>
+    </div>
+  </div>
